@@ -250,13 +250,7 @@ class OwnHomeDataMessage(Writer):
         self.writeInt(self.player.high_id)
         self.writeInt(self.player.low_id)
 
-        self.writeVint(1)  # array
-        self.writeVint(81) #// FreeTextNotification
-        self.writeInt(1) #// Notification Index
-        self.writeBoolean(False) #// Read
-        self.writeInt(0) # Time Ago
-        self.writeString(f"Добро пожаловать в Bild Brawl!\nТвой ID: <c57fa66>{self.player.low_id}</c>\nКупить привилегию VIP TG - @lekma\nНовостной Telegram канал: t.me/bildbruher")
-        self.writeVint(0)#new notif
+        self.writeVint(0)  # array
 		
         self.writeVint(0)
         self.writeBoolean(False)
