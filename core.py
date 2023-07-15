@@ -125,5 +125,5 @@ class ClientThread(Thread):
 			self.client.close()
 
 if __name__ == '__main__':
-	server = Server('0.0.0.0', 7676)
+	server = Server('0.0.0.0', 9339)
 	server.start()
